@@ -1,2 +1,2 @@
 # intraocularVue
-Vue App with Mongo DB Atalas Data
+Vue App with Mongo DB Atlas Data
