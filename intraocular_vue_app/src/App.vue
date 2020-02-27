@@ -1,7 +1,7 @@
 <template>
   <div id="app">
   
-      <Nav v-bind="$props" v-on:filterToFather="test($event)"/>
+      <Nav v-on:filterToFather="test($event)"/>
 
 
   </div>
@@ -15,10 +15,7 @@ export default {
   name:"App",
   components:{
     'Nav': Nav,
-   }, 
-   props: [
-    
-    ],
+   },
     data: function(){
      return{
          search:'',
@@ -34,7 +31,6 @@ export default {
     axios.get('http://localhost:5000/leagues/by/Premier/2018/')
       .then((response) => {
         this.info = response
-        this.props = {response}
         })
   },
     
